@@ -4,7 +4,7 @@ import welcome_section_andrea from "./../../assets/welcome-section-andrea.jpg"
 
 const Welcome = () => {
     return (
-        <section className={`${s.welcome}`}>
+        <section className={`${s.welcome}`} id="welcome">
             <div className={s.textContent}>
                 <h1 className={s.title}>
                     <span className={s.greeting}>Вітаю!</span>

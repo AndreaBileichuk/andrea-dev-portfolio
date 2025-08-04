@@ -6,7 +6,9 @@ const Header = () => {
     return (
         <header className={s.header}>
             <div>
-                <img className={s.personal_brand_logo} src={personal_brand_logo} alt="My brand's personal logo"/>
+                <a href="#welcome">
+                    <img className={s.personal_brand_logo} src={personal_brand_logo} alt="My brand's personal logo"/>
+                </a>
             </div>
             <nav className={s.nav}>
                 <ul>
@@ -18,8 +20,8 @@ const Header = () => {
             </nav>
 
             <div className={s.language_toggle}>
-                <div className={s.language}>EN</div>
                 <div className={`${s.language} ${s.active}`}>UA</div>
+                <div className={s.language}>EN</div>
             </div>
         </header>
     );
