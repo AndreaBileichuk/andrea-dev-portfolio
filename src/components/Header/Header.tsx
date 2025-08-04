@@ -13,7 +13,7 @@ const Header = () => {
             <nav className={s.nav}>
                 <ul>
                     <li><a href="#about">Про мене</a></li>
-                    <li><a href="#skills">Мої навички</a></li>
+                    <li><a href="#projects">Мої навички</a></li>
                     <li><a href="#projects">Проекти</a></li>
                     <li><a href="#contacts">Контакти</a></li>
                 </ul>
