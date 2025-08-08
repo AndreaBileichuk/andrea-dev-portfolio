@@ -2,9 +2,14 @@ import React from "react";
 import {ProjectItemData} from "../Projects";
 import s from "./../Projects.module.css"
 import Modal from "../../common/Modal/ProjectDetailsModal";
+import {useTranslation} from "react-i18next";
 
-const ProjectItem = ({name, Description, previewImage, video, technologies, gitHubRepo}: ProjectItemData) => {
+const ProjectItem = ({
+                         name, Description, previewImage,
+                         video, technologies, gitHubRepo
+                     }: ProjectItemData) => {
     const [showDetail, setShowDetail] = React.useState(false);
+    const { t, i18n } = useTranslation();
 
     return (
         <>
@@ -17,15 +22,19 @@ const ProjectItem = ({name, Description, previewImage, video, technologies, gitH
                     <div className={s.modal_content}>
                         <video src={video} controls></video>
                         <h2>{name}</h2>
-                        <Description />
+                        <Description/>
                         <div className={s.modal_technologies}>
-                            <h3>Technologies:</h3>
+                            <h3>{t("projects.technologies")}:</h3>
                             {technologies.map((t, index) =>
                                 <div key={index} className={s.modal_technology_tag}>{t}</div>
                             )}
                         </div>
-                        <a className={s.git_hub_repo} href={gitHubRepo} target="_blank" rel="noopener noreferrer">Go to
-                            github</a>
+                        <a
+                            className={s.git_hub_repo}
+                            href={gitHubRepo}
+                            target="_blank" rel="noopener noreferrer">
+                            {t("projects.github_link")}
+                        </a>
                     </div>
                 </Modal>
             )}

@@ -1,31 +1,39 @@
 import React from "react";
 import s from "./About.module.css";
 import welcome_section_andrea from "../../assets/images/welcome-section-andrea.jpg";
+import {Trans, useTranslation} from "react-i18next";
 
 const About = () => {
+    const {t, i18n} = useTranslation();
+
     return (
         <section className={s.about} id="about">
             <div className={s.container}>
                 <div className={s.photo}>
-                    <img src={welcome_section_andrea} alt="Моє фото" />
+                    <img src={welcome_section_andrea} alt={t("about.welcome_section_andrea_alt")}/>
                     <div className={s.photo_content}>
-                        <h2>Білейчук Андреа</h2>
-                        <p>Front-End та Back-End розробник. Також цікавлюсь десктопними застосунками на базі WPF.</p>
+                        <h2>{t("about.full_name")}</h2>
+                        <p>{t("about.interests")}</p>
                     </div>
                 </div>
                 <div className={s.info}>
                     <p>
-                        Я студент спеціальності <strong>Інженерія програмного забезпечення</strong> у
-                        Національному університеті "Львівська політехніка". Маю глибоку зацікавленість у розробці сучасних веб- та десктопних застосунків,
-                        які поєднують зручність, ефективність і користь для користувача.
+                        <Trans
+                            i18nKey="about.information1"
+                            components={{1: <strong/>}}
+                        />
                     </p>
                     <p>
-                        Працюю з такими технологіями, як <strong>ASP.NET, Entity Framework Core, MySQL, JavaScript, TypeScript, React, Node.js, WPF</strong>.
-                        Постійно вдосконалюю свої навички в області архітектури програмного забезпечення, баз даних, фронтенд- та серверної розробки.
+                        <Trans
+                            i18nKey="about.information2"
+                            components={{1: <strong/>}}
+                        />
                     </p>
                     <p>
-                        У майбутньому прагну створювати інноваційні та корисні програмні рішення, які будуть мати позитивний вплив на суспільство.
-                        Вірю, що технології — це інструмент для змін на краще.
+                        <Trans
+                            i18nKey="about.information3"
+                            components={{1: <strong/>}}
+                        />
                     </p>
                 </div>
             </div>

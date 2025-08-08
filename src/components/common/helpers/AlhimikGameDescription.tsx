@@ -1,29 +1,23 @@
 import React from "react";
 import s from "./HelpersStyles.module.css"
+import {Trans, useTranslation} from "react-i18next";
 
 const AlhimikGameDescription = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <div className={s.container}>
             <p>
-                <strong>“Алхімік”</strong> — ігрова RPG-система, розроблена для демонстрації 9 класичних шаблонів проєктування (Design Patterns).
+                <Trans i18nKey="projects.alhimik_game.intro" components={{1: <strong/>}}/>
             </p>
-
-            <p>Гравець грає за алхіміка, який подорожує локаціями, збирає інгредієнти, створює еліксири за рецептами та бере участь у квестах і боях з монстрами.</p>
-
-            <h3>Реалізовані шаблони:</h3>
+            <p>{t("projects.alhimik_game.story")}</p>
+            <h3>{t("projects.alhimik_game.patterns_title")}</h3>
             <ul>
-                <li>
-                    <strong>Твірні:</strong> Singleton, Abstract Factory, Builder
-                </li>
-                <li>
-                    <strong>Структурні:</strong> Facade, Decorator, Proxy
-                </li>
-                <li>
-                    <strong>Поведінкові:</strong> Strategy, State, Chain of Responsibility
-                </li>
+                <li><Trans i18nKey="projects.alhimik_game.patterns_creational" components={{1: <strong/>}}/></li>
+                <li><Trans i18nKey="projects.alhimik_game.patterns_structural" components={{1: <strong/>}}/></li>
+                <li><Trans i18nKey="projects.alhimik_game.patterns_behavioral" components={{1: <strong/>}}/></li>
             </ul>
-
-            <p>Проєкт демонструє практичне застосування архітектурних принципів у розробці ігрових систем, створюючи масштабовану та підтримувану кодову базу.</p>
+            <p>{t("projects.alhimik_game.ending")}</p>
         </div>
     );
 };

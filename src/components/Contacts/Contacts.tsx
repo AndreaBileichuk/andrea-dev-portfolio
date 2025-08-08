@@ -1,9 +1,18 @@
 import React from "react";
 import styles from "./Contacts.module.css";
-import {FaEnvelope, FaGithub, FaGitlab, FaInstagram, FaLinkedin, FaPinterest, FaTelegram} from "react-icons/fa";
+import {
+    FaEnvelope,
+    FaGithub,
+    FaInstagram,
+    FaLinkedin,
+    FaPinterest,
+    FaTelegram,
+    FaTiktok
+} from "react-icons/fa";
 import ContactItem from "./ContactItem";
 import type {IconType} from "react-icons";
 import {SiLeetcode} from "react-icons/si";
+import {useTranslation} from "react-i18next";
 
 export type Contact = {
     link: string,
@@ -18,16 +27,18 @@ const contacts : Contact[] = [
     { link: "https://github.com/AndreaBileichuk", name: "GitHub", icon: FaGithub },
     { link: "https://t.me/andreapernerovskiy", name: "Telegram", icon: FaTelegram },
     { link: "https://leetcode.com/u/Andreaaaaaaa/", name: "LeetCode", icon: SiLeetcode },
-    { link: "https://gitlab.com/yourusername", name: "GitLab", icon: FaGitlab },
+    { link: "https://www.tiktok.com/@_annddrea_", name: "Tik-Tok", icon: FaTiktok },
     { link: "https://it.pinterest.com/bilejcukandrij/", name: "Pinterest", icon: FaPinterest },
 ];
 
 
 const Contacts = () => {
+    const { t, i18n } = useTranslation();
+
     return (
         <>
         <section className={`${styles.contactSection}`} id="contacts">
-            <h2 className={styles.title}>Мої контакти</h2>
+            <h2 className={styles.title}>{t("contacts")}</h2>
             <ul className={styles.contactList}>
                 {contacts.map(c => {
                     return <ContactItem  link={c.link} name={c.name} icon = {c.icon}/>

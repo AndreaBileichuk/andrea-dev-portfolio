@@ -43,6 +43,7 @@
 }
 
 .language_toggle {
+    cursor: pointer;
     display: flex;
     gap:10px;
 }

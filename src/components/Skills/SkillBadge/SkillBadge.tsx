@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import s from "./../Skills.module.css";
 import { Level, SkillBadgeProps } from "../Skills";
+import {useTranslation} from "react-i18next";
 
 const SkillBadge = ({ name, level }: SkillBadgeProps) => {
     const totalBars = 4;
     const [isHovered, setIsHovered] = useState(false);
+    const { t, i18n } = useTranslation();
 
     const levelToText = (level: number): string => {
         switch (level) {
             case Level.Novice:
-                return "Novice";
+                return `${t("skills.novice")}`;
             case Level.Intermediate:
-                return "Intermediate";
+                return `${t("skills.intermediate")}`;
             case Level.Advanced:
-                return "Advanced";
+                return `${t("skills.advanced")}`;
             case Level.Expert:
-                return "Expert";
+                return `${t("skills.expert")}`;
             default:
                 return "";
         }

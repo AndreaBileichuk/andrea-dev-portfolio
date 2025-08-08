@@ -1,0 +1,63 @@
+{
+  "header": {
+    "about_me": "About Me",
+    "skills": "My Skills",
+    "projects": "Projects",
+    "contacts": "Contacts",
+    "personal_brand_logo": "Personal Brand Logo"
+  },
+  "welcome": {
+    "greeting": "Welcome!",
+    "name": "I'm Andrea",
+    "subtitle": "Glad to see you on my portfolio website",
+    "description": "Here you can explore my <1>skills</1>, get to know my <1>personal projects</1>, and also find my <1>contacts</1> to get in touch with me.",
+    "look_at_projects": "View Projects",
+    "welcome_section_andrea": "Personal Avatar"
+  },
+  "about": {
+    "full_name": "Bileichuk Andrea",
+    "interests": "Front-End and Back-End developer. Also interested in desktop applications based on WPF.",
+    "information1": "I am a student of the <1>Software Engineering</1> program at Lviv Polytechnic National University. I have a strong passion for developing modern web and desktop applications that combine usability, efficiency, and user value.",
+    "information2": "I work with technologies such as <1>ASP.NET, Entity Framework Core, MySQL, JavaScript, TypeScript, React, Node.js, WPF</1>. I am constantly improving my skills in software architecture, databases, frontend, and server-side development.",
+    "information3": "In the future, I aim to create innovative and useful software solutions that have a positive impact on society. I believe that technology is a tool for making the world a better place.",
+    "welcome_section_andrea_alt": "My Photo"
+  },
+  "skills": {
+    "novice": "Novice",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced",
+    "expert": "Expert"
+  },
+  "projects": {
+    "github_link": "Go to GitHub",
+    "technologies": "Technologies",
+    "alhimik_game": {
+      "name": "Alchemist Game",
+      "intro": "<1>“Alchemist”</1> is an RPG system developed to demonstrate 9 classic design patterns.",
+      "story": "The player takes on the role of an alchemist who travels through locations, gathers ingredients, creates potions according to recipes, and participates in quests and battles with monsters.",
+      "patterns_title": "Implemented Patterns:",
+      "patterns_creational": "<1>Creational:</1> Singleton, Abstract Factory, Builder",
+      "patterns_structural": "<1>Structural:</1> Facade, Decorator, Proxy",
+      "patterns_behavioral": "<1>Behavioral:</1> Strategy, State, Chain of Responsibility",
+      "ending": "The project demonstrates the practical application of architectural principles in game system development, creating a scalable and maintainable codebase."
+    },
+    "simple_code": {
+      "name": "SimpleCode code editor",
+      "intro": "I developed a <1>C/C++ code editor</1> using C# and WPF, following the MVVM architecture. The editor is designed to provide a modern, smooth workflow for developers.",
+      "features": "The application supports project management, code editing, compilation via G++, and real-time file synchronization with external changes.",
+      "technologies_title": "Technologies Used",
+      "tech_csharp": "<1>C#</1> as the core development language.",
+      "tech_wpf": "<1>WPF</1> for building the desktop interface.",
+      "tech_mvvm": "<1>MVVM</1> architecture for a clean separation of concerns.",
+      "tech_gpp": "Integration with <1>G++</1> for compilation.",
+      "capabilities_title": "Key Capabilities",
+      "capability_create_project": "Create new projects (as folders) directly from the editor.",
+      "capability_open_project": "Open and manage existing C/C++ projects.",
+      "capability_code_editing": "Edit and manage multiple code files within the editor.",
+      "capability_compile_run": "Compile and run C/C++ code via the built-in terminal.",
+      "capability_sync": "Automatic synchronization with changes from external applications.",
+      "ending": "This project combines my knowledge of desktop development, compiler integration, and clean architectural design to deliver a functional tool for C/C++ developers."
+    }
+  },
+  "contacts": "My Contacts"
+}
