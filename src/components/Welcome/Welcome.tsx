@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Welcome.module.css";
-import welcome_section_andrea from "./../../assets/welcome-section-andrea.jpg"
+import welcome_section_andrea from "../../assets/images/welcome-section-andrea.jpg"
 
 const Welcome = () => {
     return (
@@ -14,7 +14,7 @@ const Welcome = () => {
 
                 <p className={s.description}>
                     Тут ви маєте змогу побачити мої <span className={s.highlight}>навички</span>,
-                    познайомитись з моїми <span className={s.highlight}>персональними проектами</span>,
+                    познайомитись з моїми <span className={s.highlight}>персональними проєктами</span>,
                     і також отримати мої <span className={s.highlight}>контакти</span> щоб зв'язатись зі мною
                 </p>
 

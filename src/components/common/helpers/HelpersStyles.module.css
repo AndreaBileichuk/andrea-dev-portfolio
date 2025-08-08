@@ -1,0 +1,44 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container p {
+    margin-bottom: 15px;
+}
+
+.container strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.container h3 {
+    color: #3498db;
+    margin: 25px 0 15px 0;
+    font-size: 1.4em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+}
+
+.container ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.container li {
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.container li::before {
+    content: "•";
+    color: #3498db;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import personal_brand_logo from "./../../assets/personal_brand.svg"
+import personal_brand_logo from "../../assets/images/personal_brand.svg"
 import s from "./Header.module.css"
 
 const Header = () => {
@@ -13,7 +13,7 @@ const Header = () => {
             <nav className={s.nav}>
                 <ul>
                     <li><a href="#about">Про мене</a></li>
-                    <li><a href="#projects">Мої навички</a></li>
+                    <li><a href="#skills">Мої навички</a></li>
                     <li><a href="#projects">Проекти</a></li>
                     <li><a href="#contacts">Контакти</a></li>
                 </ul>

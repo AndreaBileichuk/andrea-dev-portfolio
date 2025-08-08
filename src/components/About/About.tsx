@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./About.module.css";
-import welcome_section_andrea from "./../../assets/welcome-section-andrea.jpg";
+import welcome_section_andrea from "../../assets/images/welcome-section-andrea.jpg";
 
 const About = () => {
     return (

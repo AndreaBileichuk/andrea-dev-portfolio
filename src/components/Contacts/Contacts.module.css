@@ -1,0 +1,114 @@
+.contactSection {
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.contactList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 8px 0;
+    background-color: #2a2a3a;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.10);
+    border: 1px solid rgba(120, 120, 120, 0.5);
+    transition: all 1s ease;
+}
+
+.icon {
+    margin-right: 12px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.linkedin:hover {
+    background-color: #0a66c2;
+    box-shadow:
+            0 0 12px rgba(10, 102, 194, 0.7),
+            0 0 24px rgba(10, 102, 194, 0.5),
+            0 0 36px rgba(10, 102, 194, 0.3);
+}
+
+.gmail:hover {
+    background-color: #d93025;
+    box-shadow:
+            0 0 12px rgba(217, 48, 37, 0.7),
+            0 0 24px rgba(217, 48, 37, 0.5),
+            0 0 36px rgba(217, 48, 37, 0.3);
+}
+
+.instagram:hover {
+    background-color: #e1306c;
+    box-shadow:
+            0 0 12px rgba(225, 48, 108, 0.7),
+            0 0 24px rgba(225, 48, 108, 0.5),
+            0 0 36px rgba(225, 48, 108, 0.3);
+}
+
+.github:hover {
+    background-color: #24292e;
+    box-shadow:
+            0 0 12px rgba(36, 41, 46, 0.7),
+            0 0 24px rgba(36, 41, 46, 0.5),
+            0 0 36px rgba(36, 41, 46, 0.3);
+}
+
+.telegram:hover {
+    background-color: #0088cc;
+    box-shadow:
+            0 0 12px rgba(0, 136, 204, 0.7),
+            0 0 24px rgba(0, 136, 204, 0.5),
+            0 0 36px rgba(0, 136, 204, 0.3);
+}
+
+.leetcode:hover {
+    background-color: #f89f1b;
+    box-shadow:
+            0 0 12px rgba(248, 159, 27, 0.7),
+            0 0 24px rgba(248, 159, 27, 0.5),
+            0 0 36px rgba(248, 159, 27, 0.3);
+}
+
+.gitlab:hover {
+    background-color: #fc6d26;
+    box-shadow:
+            0 0 12px rgba(252, 109, 38, 0.7),
+            0 0 24px rgba(252, 109, 38, 0.5),
+            0 0 36px rgba(252, 109, 38, 0.3);
+}
+
+.pinterest:hover {
+    background-color: #bd081c;
+    box-shadow:
+            0 0 12px rgba(189, 8, 28, 0.7),
+            0 0 24px rgba(189, 8, 28, 0.5),
+            0 0 36px rgba(189, 8, 28, 0.3);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    padding-block: 10px;
+}
+
