@@ -33,8 +33,8 @@ const Skills = () => {
     return (
         <section className={`${s.skills}`} id="skills">
             <div className={s.skills_container}>
-                {projects.map(skill => {
-                    return <SkillBadge name={skill.name} level={skill.level}/>
+                {projects.map((skill, i) => {
+                    return <SkillBadge key={i} name={skill.name} level={skill.level}/>
                 })}
             </div>
         </section>

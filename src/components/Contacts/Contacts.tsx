@@ -33,15 +33,15 @@ const contacts : Contact[] = [
 
 
 const Contacts = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     return (
         <>
         <section className={`${styles.contactSection}`} id="contacts">
             <h2 className={styles.title}>{t("contacts")}</h2>
             <ul className={styles.contactList}>
-                {contacts.map(c => {
-                    return <ContactItem  link={c.link} name={c.name} icon = {c.icon}/>
+                {contacts.map((c, i) => {
+                    return <ContactItem key={i} link={c.link} name={c.name} icon = {c.icon}/>
                 })}
             </ul>
         </section>

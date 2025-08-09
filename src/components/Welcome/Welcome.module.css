@@ -199,3 +199,127 @@
     from { transform: translate(-50%, -50%) rotate(0deg); }
     to { transform: translate(-50%, -50%) rotate(360deg); }
 }
+
+/* Базові стилі залишаються, а нижче — адаптація */
+
+@media (max-width: 1200px) {
+    .welcome {
+        padding-inline: 80px;
+    }
+
+    .name {
+        font-size: 64px;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 992px) {
+    .welcome {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-inline: 40px;
+        padding-block: 60px;
+    }
+
+    .textContent {
+        max-width: 100%;
+    }
+
+    .avatarContainer {
+        margin-top: 40px;
+    }
+
+    .name {
+        font-size: 56px;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        padding-inline: 20px;
+        padding-block: 50px;
+    }
+
+    .greeting {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 46px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .primaryBtn {
+        padding: 14px 24px;
+        font-size: 14px;
+    }
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+    }
+
+    .avatarRing {
+        width: 280px;
+        height: 280px;
+    }
+
+    .avatarGlow {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .greeting {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 38px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .primaryBtn {
+        padding: 12px 20px;
+        font-size: 13px;
+        gap: 8px;
+    }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .avatarRing {
+        width: 230px;
+        height: 230px;
+    }
+
+    .avatarGlow {
+        width: 170px;
+        height: 170px;
+    }
+}

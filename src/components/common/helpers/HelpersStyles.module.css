@@ -10,6 +10,12 @@
 
 .container p {
     margin-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .container strong {
@@ -34,6 +40,12 @@
     margin-bottom: 8px;
     position: relative;
     color: #e6e6e6;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
 }
 
 .container li::before {
@@ -43,4 +55,13 @@
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+/* Додаткові стилі для покращення читабельності */
+.container p:last-child {
+    text-align-last: left;
+}
+
+.container li:last-child {
+    text-align-last: left;
 }

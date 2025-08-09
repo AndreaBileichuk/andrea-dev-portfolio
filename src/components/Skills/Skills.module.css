@@ -89,3 +89,80 @@
     opacity: 1;
     visibility: visible;
 }
+
+/* 1200px і менше — зменшуємо відступи між колонками */
+@media (max-width: 1200px) {
+    .skills {
+        padding-inline: 100px;
+    }
+
+    .skills_container {
+        column-gap: 8rem;
+    }
+
+    .skill_badge {
+        width: 280px;
+        padding: 0.9rem 2.5rem;
+    }
+}
+
+/* 992px і менше — дві колонки ближче одна до одної */
+@media (max-width: 992px) {
+    .skills {
+        padding-inline: 50px;
+    }
+
+    .skills_container {
+        column-gap: 4rem;
+    }
+
+    .skill_badge {
+        width: 260px;
+        font-size: 0.85rem;
+        padding: 0.8rem 2rem;
+    }
+}
+
+/* 768px і менше — одна колонка */
+@media (max-width: 768px) {
+    .skills {
+        padding-inline: 20px;
+        padding-top: 50px;
+    }
+
+    .skills_container {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 1rem;
+        justify-items: center;
+    }
+
+    .skill_badge {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+/* 480px і менше — дрібніший текст і компактніші бейджі */
+@media (max-width: 480px) {
+    .skills {
+        padding-inline: 10px;
+    }
+
+    .skill_badge {
+        width: 100%;
+        max-width: 270px;
+        font-size: 0.8rem;
+        padding: 0.7rem 1.5rem;
+    }
+
+    .bar {
+        width: 12px;
+        height: 14px;
+    }
+
+    .textOnHover {
+        font-size: 0.7rem;
+        padding: 4px 10px;
+    }
+}

@@ -103,3 +103,96 @@
 .git_hub_repo:hover {
     opacity: 0.9;
 }
+
+/* 992px і менше — трохи менші картки */
+@media (max-width: 992px) {
+    .projects {
+        gap: 1.5rem;
+        padding-inline: 20px;
+    }
+
+    .project_item img {
+        height: 180px;
+    }
+
+    .project_item h2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* 768px і менше — одна колонка */
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-inline: 15px;
+    }
+
+    .project_item {
+        padding: 1rem;
+    }
+
+    .project_item img {
+        height: 160px;
+    }
+
+    .project_item h2 {
+        font-size: 1rem;
+    }
+
+    /* Модалка на мобілці */
+    .modal_content {
+        padding: 1.5rem;
+        max-width: 95vw;
+    }
+
+    .modal_content h2 {
+        font-size: 1.25rem;
+    }
+
+    .modal_content p {
+        font-size: 0.9rem;
+    }
+}
+
+/* 480px і менше — ще компактніше */
+@media (max-width: 480px) {
+    .projects {
+        padding-inline: 10px;
+        gap: 1rem;
+    }
+
+    .project_item {
+        padding: 0.8rem;
+    }
+
+    .project_item img {
+        height: 140px;
+    }
+
+    .project_item h2 {
+        font-size: 0.95rem;
+    }
+
+    .modal_content {
+        padding: 1rem;
+    }
+
+    .modal_content h2 {
+        font-size: 1.1rem;
+    }
+
+    .modal_content p {
+        font-size: 0.85rem;
+    }
+
+    .modal_technology_tag {
+        font-size: 0.75rem;
+        padding: 0.3rem 0.6rem;
+    }
+
+    .git_hub_repo {
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+    }
+}

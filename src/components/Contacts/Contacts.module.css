@@ -113,3 +113,34 @@
     padding-block: 10px;
 }
 
+/* Для планшетів */
+@media (max-width: 1024px) {
+    .contactList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* Для телефонів */
+@media (max-width: 600px) {
+    .contactList {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .contactItem {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        font-size: 1rem;
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 421px) {
+    .footer p {
+        font-size: 12px;
+    }
+}
