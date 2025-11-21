@@ -1,13 +1,19 @@
-import React, {JSX, ReactNode} from "react";
+import React, {JSX} from "react";
 import s from "./Projects.module.css"
 import ProjectItem from "./ProjectItem/ProjectItem";
+
 import alhimik_project_preview from "../../assets/images/alhimik_project_preview.png"
 import alhimik_project_video from "./../../assets/videos/alhimik_project_video.mp4"
 import AlhimikGameDescription from "../common/helpers/AlhimikGameDescription";
 
+
 import simple_code_project from "./../../assets/images/simple_code_project.png";
 import simple_code_project_video from "./../../assets/videos/simple_code_project.mp4"
 import SimpleCodeEditorDescription from "../common/helpers/SimpleCodeEditorDescription";
+
+import todo_list_app from "./../../assets/images/todo-list-app.png";
+import todo_list_app_video from "./../../assets/videos/todo-list-app.mp4";
+import TodoListAppDescription from "../common/helpers/TodoListAppDescription";
 
 import {useTranslation} from "react-i18next";
 
@@ -22,6 +28,7 @@ export type ProjectItemData = {
 
 const Projects = () => {
     const { t, i18n } = useTranslation();
+
     const projectsData: ProjectItemData[] = [
         {
             name: `${t("projects.simple_code.name")}`,
@@ -38,6 +45,14 @@ const Projects = () => {
             video: alhimik_project_video,
             technologies: ["WPF", "C#", "GOF Patterns"],
             gitHubRepo: "https://github.com/AndreaBileichuk/alhimikGame",
+        },
+        {
+            name: `${t("projects.todo_list.name")}`,
+            Description: TodoListAppDescription,
+            previewImage: todo_list_app,
+            video: todo_list_app_video,
+            technologies: ["Asp.Net Core", "C#", "Ef Core", "PostgreSql", "Html", "Css", "Js"],
+            gitHubRepo: "https://github.com/AndreaBileichuk/TodoListApp",
         }
     ];
 

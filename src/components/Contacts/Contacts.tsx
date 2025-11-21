@@ -47,7 +47,7 @@ const Contacts = () => {
         </section>
             <footer className={styles.footer}>
                 <p>
-                    Copyright © 2025. Made by Bileychuk Andrea
+                    Copyright © 2025. Made by Bileichuk Andrea
                 </p>
             </footer>
         </>

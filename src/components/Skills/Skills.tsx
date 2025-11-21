@@ -17,9 +17,10 @@ export type SkillBadgeProps = {
 const projects: SkillBadgeProps[] = [
     {name: "C#", level: Level.Advanced},
     {name: ".NET", level: Level.Advanced},
-    {name: "ASP.NET", level: Level.Intermediate},
-    {name: "Entity Framework Core", level: Level.Intermediate},
+    {name: "ASP.NET", level: Level.Advanced},
+    {name: "Entity Framework Core", level: Level.Advanced},
     {name: "MySQL", level: Level.Intermediate},
+    {name: "Postgresql", level: Level.Intermediate},
     {name: "WPF", level: Level.Intermediate},
     {name: "HTML", level: Level.Advanced},
     {name: "CSS", level: Level.Advanced},

@@ -18,7 +18,7 @@
     "full_name": "Bileichuk Andrea",
     "interests": "Front-End and Back-End developer. Also interested in desktop applications based on WPF.",
     "information1": "I am a student of the <1>Software Engineering</1> program at Lviv Polytechnic National University. I have a strong passion for developing modern web and desktop applications that combine usability, efficiency, and user value.",
-    "information2": "I work with technologies such as <1>ASP.NET, Entity Framework Core, MySQL, JavaScript, TypeScript, React, Node.js, WPF</1>. I am constantly improving my skills in software architecture, databases, frontend, and server-side development.",
+    "information2": "I work with technologies such as <1>ASP.NET, Entity Framework Core, PostgreSql, MySQL, JavaScript, TypeScript, React, Node.js, WPF</1>. I am constantly improving my skills in software architecture, databases, frontend, and server-side development.",
     "information3": "In the future, I aim to create innovative and useful software solutions that have a positive impact on society. I believe that technology is a tool for making the world a better place.",
     "welcome_section_andrea_alt": "My Photo"
   },
@@ -57,6 +57,23 @@
       "capability_compile_run": "Compile and run C/C++ code via the built-in terminal.",
       "capability_sync": "Automatic synchronization with changes from external applications.",
       "ending": "This project combines my knowledge of desktop development, compiler integration, and clean architectural design to deliver a functional tool for C/C++ developers."
+    },
+    "todo_list": {
+      "name": "To-Do List Task Manager",
+      "intro": "I developed a <1>comprehensive task management system</1> based on .NET 8, which consists of two components: a Web API and an MVC client. The project is designed for effective time management.",
+      "features": "The application allows you to create to-do lists, manage tasks, add comments and tags, and includes a user authentication system.",
+      "technologies_title": "Technologies Used",
+      "tech_aspnet": "<1>ASP.NET Core</1> (MVC + Web API) for building a reliable architecture.",
+      "tech_ef": "<1>Entity Framework Core</1> for working with data (ORM).",
+      "tech_postgres": "<1>PostgreSQL</1> as a reliable relational database.",
+      "tech_identity": "<1>ASP.NET Core Identity</1> for secure registration and login.",
+      "capabilities_title": "Key Features",
+      "capability_lists": "Creating and managing multiple to-do lists.",
+      "capability_tasks": "Advanced task management: deadlines, statuses, and assignments.",
+      "capability_search": "Filtering and sorting tasks for quick access.",
+      "capability_comments": "Adding comments to tasks.",
+      "capability_auth": "Full account system: login, registration.",
+      "ending": "This project demonstrates my skills in building RESTful APIs, designing PostgreSQL database schemas, and creating interactive web interfaces on the .NET platform."
     }
   },
   "contacts": "My Contacts"
